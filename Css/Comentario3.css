@@ -1,0 +1,5 @@
+img.comment-profile-pic {
+    width: 200px; /* Ancho deseado de la imagen */
+    height: 200px; /* Alto deseado de la imagen */
+    border-radius: 100%; /* Aplicar un borde redondeado para que se vea como un círculo */
+  }
