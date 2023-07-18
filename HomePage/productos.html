@@ -1,14 +1,26 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Productos</title>
+    <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Mulish:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../Css/normalize.css">
+    <link rel="stylesheet" href="../Css/estilo.css">
+    <link rel="shortcut icon" href="../Image/logo.JPG">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         
-        <a class="navbar-brand" href="index.html"><img src="../Image/logo.JPG" width="60" height="40" alt="logo"></a>
+        <a class="navbar-brand" href="../index.html"><img src="../Image/logo.JPG" width="60" height="40" alt="logo"></a>
         
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
@@ -27,59 +39,104 @@
           </ul>
         </div>
       </nav>
-      
-      <div class="container">
-        <h2>Inventario de Productos</h2>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Productos</th>
-              <th>Precio</th>
-              <th>Stock</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Collar</td>
-              </td>
-              <td>$10</td>
-              <td>26</td>
-            </tr>
-            <tr>
-              <td>Bolso</td>
-              <td>$45</td>
-              <td>33</td>
-            </tr>
-            <tr>
-              <td>Bufandas</td>
-              <td>$20</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Ponchos</td>
-              <td>$30</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>Sombrero de paja toquilla</td>
-              <td>$50</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <td>Mascara de Tigua</td>
-              <td>$40</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>Figuras de Madera</td>
-              <td>$60</td>
-              <td>8</td>
-            </tr>
-            <!-- Agrega más filas con los productos restantes -->
-          </tbody>
-        </table>
-      </div>
-    </nav>
-    
+    <section class="menu contenedor">
+        <h2 class="texto-articulos">Productos Artesanales</h2>
+        <div class="botones-articuloss">
+            <button class="todos btn btn-verde">Todos</button>
+            <button class="sombreros btn btn-verde">Sombreros</button>
+            <button class="poncho btn btn-verde">Poncho</button>
+            <button class="pulseras btn btn-verde">Pulseras</button>
+        </div>
+        <div class="articulos">
+            <div class="articulo" data-platillo="sombreros">
+                <img data-src="imagenes/plato1.jpg" alt="sombreros">
+                <h2>Sticky Sesame Cauliflower</h2>
+                <p>Arroz basmati con fondo de hongos,acompañado de coliflor crujiente y una salsa agridulce.</p>
+                <div class="precio">
+                    <p>$20.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="articulo" data-platillo="sombreros">
+                <img data-src="imagenes/plato2.jpg" alt="sombreros">
+                <h2>Ensalada Thai</h2>
+                <p>Lechiga, cool morada,champiñones.</p>
+                <div class="precio">
+                    <p>$15.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="articulo" data-platillo="sombreros">
+                <img data-src="imagenes/plato3.jpg" alt="sombreros">
+                <h2>Berenjenas Grilladas</h2>
+                <p>Queso de almentras y Kale chips.</p>
+                <div class="precio">
+                    <p>$15.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="articulo" data-platillo="poncho">
+                <img data-src="imagenes/sanduche1.jpg" alt="poncho">
+                <h2>Sandwich Capresse Vegano</h2>
+                <p>Pesto de aguacate, queso de almentras, tomates deshidratados, nuestro pan artesanal y chips de yuca.</p>
+                <div class="precio">
+                    <p>$10.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="articulo" data-platillo="poncho">
+                <img data-src="imagenes/sanduche2.jpg" alt="poncho">
+                <h2>Sandwich chicken</h2>
+                <p>Pollo, lechuga, queso de almentras, tomates deshidratados, nuestro pan artesanal y chips de yuca.</p>
+                <div class="precio">
+                    <p>$10.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="articulo" data-platillo="poncho">
+                <img data-src="imagenes/sanduche3.jpg" alt="poncho">
+                <h2>Vegan Grilled cheese sandwich</h2>
+                <p>3 capas de queso de almentras y nuestro pan artesanal.</p>
+                <div class="precio">
+                    <p>$10.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="articulo" data-platillo="pulseras">
+                <img data-src="imagenes/bebida1.jpg" alt="pulseras">
+                <h2>Infusión de Blue Tea</h2>
+                <p>Thai orquídea.</p>
+                <div class="precio">
+                    <p>$5.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="articulo" data-platillo="pulseras">
+                <img data-src="imagenes/bebida2.jpg" alt="pulseras">
+                <h2>Infusión de Rosas</h2>
+                <p>Petalos de rosas deshidratadas.</p>
+                <div class="precio">
+                    <p>$5.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="articulo" data-platillo="pulseras">
+                <img data-src="imagenes/bebida3.jpg" alt="pulseras">
+                <h2>Frozen Sandía y menta</h2>
+                <p>Sandia, menta y estevia.</p>
+                <div class="precio">
+                    <p>$5.0</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2023 Marketplace de Productos Artesanales. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../javascript.js"></script>
+
 </body>
+
 </html>
