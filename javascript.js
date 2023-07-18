@@ -7,6 +7,7 @@ const btnPulseras = document.querySelector('.pulseras');
 const contenedorArticulos = document.querySelector('.articulos')
 document.addEventListener('DOMContentLoaded',()=>{
     articulos();
+    
 });
 
 const articulos = () =>{
